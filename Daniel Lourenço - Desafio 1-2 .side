@@ -1,0 +1,247 @@
+{
+  "id": "ac7616e6-134a-42a3-a913-f0af69e3bd13",
+  "version": "2.0",
+  "name": "Daniel Lourenço - Desafio 1-2",
+  "url": "https://www.unimed.coop.br/",
+  "tests": [{
+    "id": "a7dc50db-b896-4f32-a3dc-74e158d4ef57",
+    "name": "Register",
+    "commands": [{
+      "id": "7084d5a4-3969-4557-bb78-80186fb3b510",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aae053da-7c66-445b-9a28-c1ba79058a97",
+    "name": "Login",
+    "commands": [{
+      "id": "e211aba5-9383-4a6a-9c25-5ae12da05c5b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53f18690-843c-4fc5-89bd-34f1462b4e35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .titulo-midia",
+      "targets": [
+        ["css=.card:nth-child(2) .titulo-midia", "css:finder"],
+        ["xpath=//div[@id='_chamadasportlet_WAR_chamadasportlet_INSTANCE_4DVMwUDNGPQo_div-conteudo-chamada']/section/article[2]/div[2]/a/h2", "xpath:idRelative"],
+        ["xpath=//article[2]/div[2]/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Guia Médico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28fcf645-375c-432a-9136-a9c59d7256e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=campo_pesquisa",
+      "targets": [
+        ["id=campo_pesquisa", "id"],
+        ["name=pesquisa", "name"],
+        ["css=#campo_pesquisa", "css:finder"],
+        ["xpath=//input[@id='campo_pesquisa']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e1960e-f29b-4fd2-834d-da685b3bbb75",
+      "comment": "",
+      "command": "type",
+      "target": "id=campo_pesquisa",
+      "targets": [],
+      "value": "cardiologia"
+    }, {
+      "id": "74e75331-a821-47a6-940e-5f2fcc899338",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icomoon-gm-pesquisa",
+      "targets": [
+        ["css=.icomoon-gm-pesquisa", "css:finder"],
+        ["xpath=//button[@id='btn_pesquisar']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8e00f00-629c-48aa-a93a-edeb7848258f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.margin-left:nth-child(2)",
+      "targets": [
+        ["css=.margin-left:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/form/label/div[2]", "xpath:idRelative"],
+        ["xpath=//label/div[2]", "xpath:position"]
+      ],
+      "value": "120000"
+    }, {
+      "id": "de162ac7-16e4-4aa5-afff-61aaf4a3f65b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.margin-bottom input",
+      "targets": [
+        ["css=.margin-bottom input", "css:finder"],
+        ["xpath=//input[@value='37']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/form/label/div/input", "xpath:idRelative"],
+        ["xpath=//label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78090b83-0b47-4115-a8a3-3b16de1394e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e88ab4f-9b58-4ad9-8d05-0faf9a6556a0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=2",
+      "targets": [],
+      "value": "120000"
+    }, {
+      "id": "4f2a9017-cc55-4ddc-abfd-0e4082f40b14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2",
+      "targets": [
+        ["linkText=2", "linkText"],
+        ["css=.span12 li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'2')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/div[8]/div[3]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#lista_por')])[4]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e06e918-0028-40ed-afc2-a9bcf734354a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=3",
+      "targets": [
+        ["linkText=3", "linkText"],
+        ["css=.span12 li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'3')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/div[8]/div[3]/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#lista_por')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": "120000"
+    }, {
+      "id": "ddaddc14-de52-4d9d-8464-c139b44c8cf8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2",
+      "targets": [
+        ["linkText=2", "linkText"],
+        ["css=.span12 li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'2')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/div[8]/div[3]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#lista_por')])[4]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b7ec2e0-1e6d-4eff-a4e6-58d8a96e0163",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='resultado0']/div/p/span[2]",
+      "targets": [
+        ["css=#resultado0 > .resultado-resumido span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='resultado0']/div/p/span[2]", "xpath:idRelative"],
+        ["xpath=//p/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Cardiologia')]", "xpath:innerText"]
+      ],
+      "value": "Cardiologia"
+    }, {
+      "id": "502689f0-0a75-48fa-bef1-a7eb593914c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='resultado1']/div/p[2]/span[2]",
+      "targets": [
+        ["css=#resultado1 > .resultado-resumido > p:nth-child(4) > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='resultado1']/div/p[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p[2]/span[2]", "xpath:position"]
+      ],
+      "value": "Cardiologia"
+    }, {
+      "id": "923963fc-1a47-4529-9e14-c5f136a9827e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[3]/div/div[2]/div/p[2]/span[2]",
+      "targets": [
+        ["css=#resultado2 > .resultado-resumido > p:nth-child(4) > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='resultado2']/div/p[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/p[2]/span[2]", "xpath:position"]
+      ],
+      "value": "Cardiologia"
+    }, {
+      "id": "79c5b516-2fa7-4ddc-ac62-4f86a1a6ed6b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#resultado0 #txt_endereco > p",
+      "targets": [
+        ["css=#resultado0 #txt_endereco > p", "css:finder"],
+        ["xpath=//span[@id='txt_endereco']/p", "xpath:idRelative"],
+        ["xpath=//span/p", "xpath:position"]
+      ],
+      "value": "RJ"
+    }, {
+      "id": "68a18c1e-4e5a-4772-ad52-601fccb3d4d9",
+      "comment": "",
+      "command": "forEach",
+      "target": "//*[@id=\"resultado1\"]/div[1]/p[2]/span[2]",
+      "targets": [],
+      "value": "Cardiologia"
+    }, {
+      "id": "e976bb64-a6bc-4fd5-8381-b96a851c51d1",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d53e22ba-66c5-469a-a602-1fc92df2b39e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f67cd8a6-959b-4fa7-9894-7940bd4ae82f",
+    "name": "Search Project",
+    "commands": [{
+      "id": "fb407174-4aff-4fba-a9f0-64c0f6be1572",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "88096697-7308-4a45-97e3-8df59b1bce99",
+    "name": "SeSocio",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a7dc50db-b896-4f32-a3dc-74e158d4ef57", "aae053da-7c66-445b-9a28-c1ba79058a97", "f67cd8a6-959b-4fa7-9894-7940bd4ae82f"]
+  }],
+  "urls": ["htpps://pwatest.sesocio.com/", "https://pwatest.sesocio.com/", "http://www.omayo.blogspot.com/", "https://www.unimed.coop.br/"],
+  "plugins": []
+}
