@@ -35,7 +35,6 @@ class Fidelity {
         movieGenre[5] = "Animação";
 
         //Welcome user and gather their menu selection
-        System.out.println("Welcome to our cafe! Please enjoy!");
         System.out.println("Please enter a menu selection:\n"
                 + "0. Senhor dos Anéis -- $45.00\n"
                 + "1. As Branquelas -- $55.00\n"
