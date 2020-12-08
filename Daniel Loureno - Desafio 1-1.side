@@ -148,12 +148,12 @@
   }],
   "suites": [{
     "id": "88096697-7308-4a45-97e3-8df59b1bce99",
-    "name": "SeSocio",
+    "name": "DL",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
     "tests": ["a7dc50db-b896-4f32-a3dc-74e158d4ef57", "aae053da-7c66-445b-9a28-c1ba79058a97", "f67cd8a6-959b-4fa7-9894-7940bd4ae82f"]
   }],
-  "urls": ["htpps://pwatest.sesocio.com/", "https://pwatest.sesocio.com/", "http://www.omayo.blogspot.com/", "https://www.unimed.coop.br/"],
+  "urls": ["https://www.unimed.coop.br/"],
   "plugins": []
 }
